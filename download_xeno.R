@@ -7,24 +7,117 @@ source("functions.R")
 
 # Example usage
 # species can be
-# 1. Yellowhammer (Emberiza citronella);
-# 2. Grey partridge (Perdix perdix);
-# 3. Lapwing (Vanellus vanellus);
-# 4. Corn Bunting (Emberiza calandra);
-# 5. Skylark (Alauda arvensis);
-# 6. Meadow Pipit (Anthus pratensis);
-# 7. Linnet (Linaria cannabina);
-# 8. Tree Sparrow (Passer montanus);
-# 9. Redstart (Phoenicurus phoenicurus);
-# 10. Mistle Thrush (Turdus viscivorus).
+# common_name <- "Yellowhammer"; latin_name <- "Emberiza citronella"
+# common_name <- "Grey partridge"; latin_name <- "Perdix perdix"
+# common_name <- "Lapwing"; latin_name <- "Vanellus vanellus"
+# common_name <- "Corn Bunting"; latin_name <- "Emberiza calandra"
+# common_name <- "Skylark"; latin_name <- "Alauda arvensis"
+# common_name <- "Meadow Pipit"; latin_name <- "Anthus pratensis"
+# common_name <- "Linnet"; latin_name <- "Linaria cannabina"
+# common_name <- "Tree Sparrow"; latin_name <- "Passer montanus"
+# common_name <- "Redstart"; latin_name <- "Phoenicurus phoenicurus"
+# common_name <- "Mistle Thrush"; latin_name <- "Turdus viscivorus"
+common_name <- "Yellowhammer"; latin_name <- "Emberiza citronella"
 bird_calls <- get_filtered_recordings(
-  species = "Vanellus vanellus",
+  species = latin_name,
   target_duration = 10,
   tolerance = 5.0,
   download = TRUE,
   max_downloads = 10,  # Change this to any number you like
-  download_folder = "calls/lapwing"
+  download_folder = paste0("calls/", common_name)
 )
 
-print(bird_calls[, c("gen", "sp", "en", "length", "file")])
+common_name <- "Grey partridge"; latin_name <- "Perdix perdix"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Lapwing"; latin_name <- "Vanellus vanellus"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Corn Bunting"; latin_name <- "Emberiza calandra"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Skylark"; latin_name <- "Alauda arvensis"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Meadow Pipit"; latin_name <- "Anthus pratensis"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Linnet"; latin_name <- "Linaria cannabina"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Tree Sparrow"; latin_name <- "Passer montanus"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Redstart"; latin_name <- "Phoenicurus phoenicurus"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+common_name <- "Mistle Thrush"; latin_name <- "Turdus viscivorus"
+bird_calls <- get_filtered_recordings(
+  species = latin_name,
+  target_duration = 10,
+  tolerance = 5.0,
+  download = TRUE,
+  max_downloads = 10,  # Change this to any number you like
+  download_folder = paste0("calls/", common_name)
+)
+
+
+# print out a set of calls if needed
+#print(bird_calls[, c("gen", "sp", "en", "length", "file")])
 
