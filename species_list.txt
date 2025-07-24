@@ -2,9 +2,9 @@ Emberiza citrinella_Yellowhammer
 Perdix perdix_Grey partridge
 Vanellus vanellus_Lapwing
 Emberiza calandra_Corn Bunting
-Alauda arvensis_Skylark
+Alauda arvensis_Eurasian Skylark
 Anthus pratensis_Meadow Pipit
-Linaria cannabina_Linnet
+Linaria cannabina_Eurasian Linnet
 Passer montanus_Tree Sparrow
 Phoenicurus phoenicurus_Redstart
 Turdus viscivorus_Mistle Thrush
